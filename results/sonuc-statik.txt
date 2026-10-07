@@ -1,0 +1,88 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+Iz yuklendi [FR1]: scratch/iz_munih.csv  (2424 satir, 24 baglanti, 4 verici)
+gnb0 konum kontrolu [FR1]: sapma=0 m
+gnb1 konum kontrolu [FR1]: sapma=0 m
+gnb2 konum kontrolu [FR1]: sapma=0 m
+gnb3 konum kontrolu [FR1]: sapma=0 m
+Iz yuklendi [FR2]: scratch/iz_munih_fr2.csv  (2424 satir, 24 baglanti, 4 verici)
+gnb0 konum kontrolu [FR2]: sapma=0 m
+gnb1 konum kontrolu [FR2]: sapma=0 m
+gnb2 konum kontrolu [FR2]: sapma=0 m
+gnb3 konum kontrolu [FR2]: sapma=0 m
+esleme: dugum 0 = gnb0
+esleme: dugum 1 = gnb1
+esleme: dugum 2 = gnb2
+esleme: dugum 3 = gnb3
+esleme: dugum 4 = A_ileri
+esleme: dugum 5 = A_geri
+esleme: dugum 6 = B_ileri
+esleme: dugum 7 = B_geri
+esleme: dugum 8 = C_ileri
+esleme: dugum 9 = C_geri
+yol kaybi modeli: SionnaIzYolKaybi (FR1 + FR2)
+
+--- ilk 4 kanal cagrisi ---
+  [IZ:FR1] t=0s  gnb0 -> A_ileri   kazanc=-71.8425 dB
+  [IZ:FR1] t=0s  gnb0 -> A_geri   kazanc=-134.348 dB
+  [IZ:FR1] t=0s  gnb0 -> B_ileri   kazanc=-67.7558 dB
+  [IZ:FR1] t=0s  gnb0 -> B_geri   kazanc=-87.1665 dB
+  [IZ:FR2] t=0.028s  gnb0 -> A_ileri   kazanc=-89.4286 dB
+  [IZ:FR2] t=0.028s  gnb0 -> B_ileri   kazanc=-85.5066 dB
+  [IZ:FR2] t=0.028s  gnb0 -> B_geri   kazanc=-106.65 dB
+  [IZ:FR2] t=0.028s  gnb0 -> C_geri   kazanc=-109.995 dB
+[BWP SECIMI] SENSOR (NGBR_LOW_LAT_EMBB) -> FR2 / BWP1
+0.856001s  [HANDOVER BASLADI] A_geri (IMSI 5)  cellId 3 -> 2  (rnti 1)
+0.858036s  [HANDOVER TAMAMLANDI] A_geri (IMSI 5)  yeni cellId 2  (rnti 1)
+[BWP SECIMI] CONTROL (GBR_V2X) -> FR1 / BWP0
+[BWP SECIMI] MAP (NGBR_VIDEO_TCP_DEFAULT) -> FR2 / BWP1
+1.456s  [HANDOVER BASLADI] A_geri (IMSI 5)  cellId 2 -> 3  (rnti 1)
+1.45804s  [HANDOVER TAMAMLANDI] A_geri (IMSI 5)  yeni cellId 3  (rnti 2)
+2.656s  [HANDOVER BASLADI] A_ileri (IMSI 4)  cellId 1 -> 2  (rnti 1)
+2.65804s  [HANDOVER TAMAMLANDI] A_ileri (IMSI 4)  yeni cellId 2  (rnti 2)
+7.456s  [HANDOVER BASLADI] A_ileri (IMSI 4)  cellId 2 -> 3  (rnti 2)
+7.45804s  [HANDOVER TAMAMLANDI] A_ileri (IMSI 4)  yeni cellId 3  (rnti 3)
+7.656s  [HANDOVER BASLADI] C_geri (IMSI 9)  cellId 1 -> 4  (rnti 4)
+7.65804s  [HANDOVER TAMAMLANDI] C_geri (IMSI 9)  yeni cellId 4  (rnti 2)
+8.256s  [HANDOVER BASLADI] A_geri (IMSI 5)  cellId 3 -> 2  (rnti 2)
+8.25804s  [HANDOVER TAMAMLANDI] A_geri (IMSI 5)  yeni cellId 2  (rnti 3)
+9.256s  [HANDOVER BASLADI] A_ileri (IMSI 4)  cellId 3 -> 2  (rnti 3)
+9.25804s  [HANDOVER TAMAMLANDI] A_ileri (IMSI 4)  yeni cellId 2  (rnti 4)
+
+================= SONUC =================
+Izden okunan cagri (gNB<->arac) [FR1] : 184944
+Friis yedegi     (arac<->arac) [FR1] : 135879
+Izden okunan cagri (gNB<->arac) [FR2]: 351198
+Friis yedegi     (arac<->arac) [FR2]: 319473
+>>> Her iki iz de basariyla kullanildi.
+
+--- akis sonuclari ---
+Arac       | Trafik   | Yon | Throughput | Gecikme    | Kayip
+-----------------------------------------------------------------
+A_ileri    | SENSOR   | UL  |    0.48 Mbps |   39.81 ms |  67.48 %
+A_geri     | SENSOR   | UL  |    1.40 Mbps |   16.67 ms |   5.24 %
+B_ileri    | SENSOR   | UL  |    0.40 Mbps |   64.37 ms |  72.93 %
+B_geri     | SENSOR   | UL  |    1.38 Mbps |   20.54 ms |   6.33 %
+C_ileri    | SENSOR   | UL  |    0.44 Mbps |  109.94 ms |  69.86 %
+C_geri     | SENSOR   | UL  |    0.00 Mbps |    0.00 ms | 100.00 %
+A_ileri    | CONTROL  | DL  |    0.05 Mbps |   15.34 ms |   4.69 %
+A_ileri    | MAP      | DL  |    0.77 Mbps |   23.93 ms |   5.92 %
+A_geri     | CONTROL  | DL  |    0.05 Mbps |   15.58 ms |   3.47 %
+A_geri     | MAP      | DL  |    0.79 Mbps |   24.22 ms |   4.08 %
+B_ileri    | CONTROL  | DL  |    0.05 Mbps |    2.74 ms |   0.00 %
+B_ileri    | MAP      | DL  |    0.82 Mbps |    2.73 ms |   0.00 %
+B_geri     | CONTROL  | DL  |    0.05 Mbps |    2.43 ms |   0.00 %
+B_geri     | MAP      | DL  |    0.82 Mbps |    2.44 ms |   0.00 %
+C_ileri    | CONTROL  | DL  |    0.05 Mbps |    4.72 ms |   3.88 %
+C_ileri    | MAP      | DL  |    0.79 Mbps |    6.79 ms |   4.39 %
+C_geri     | CONTROL  | DL  |    0.05 Mbps |    2.70 ms |   4.08 %
+C_geri     | MAP      | DL  |    0.79 Mbps |    4.18 ms |   4.39 %
+
+--- handover ozeti ---
+Toplam tamamlanan handover: 7
+  A_ileri    : 3
+  A_geri     : 3
+  B_ileri    : 0
+  B_geri     : 0
+  C_ileri    : 0
+  C_geri     : 1

@@ -1,0 +1,118 @@
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+Iz yuklendi [FR1]: scratch/iz_munih.csv  (2424 satir, 24 baglanti, 4 verici)
+gnb0 konum kontrolu [FR1]: sapma=0 m
+gnb1 konum kontrolu [FR1]: sapma=0 m
+gnb2 konum kontrolu [FR1]: sapma=0 m
+gnb3 konum kontrolu [FR1]: sapma=0 m
+Iz yuklendi [FR2]: scratch/iz_munih_fr2.csv  (2424 satir, 24 baglanti, 4 verici)
+gnb0 konum kontrolu [FR2]: sapma=0 m
+gnb1 konum kontrolu [FR2]: sapma=0 m
+gnb2 konum kontrolu [FR2]: sapma=0 m
+gnb3 konum kontrolu [FR2]: sapma=0 m
+esleme: dugum 0 = gnb0
+esleme: dugum 1 = gnb1
+esleme: dugum 2 = gnb2
+esleme: dugum 3 = gnb3
+esleme: dugum 4 = A_ileri
+esleme: dugum 5 = A_geri
+esleme: dugum 6 = B_ileri
+esleme: dugum 7 = B_geri
+esleme: dugum 8 = C_ileri
+esleme: dugum 9 = C_geri
+yol kaybi modeli: SionnaIzYolKaybi (FR1 + FR2)
+
+Dinamik SENSOR + HISTERESIS AKTIF: FR2->FR1 < -125 dB, FR1->FR2 > -115 dB. Kontrol araligi=100 ms
+
+--- ilk 4 kanal cagrisi ---
+  [IZ:FR1] t=0s  gnb0 -> A_ileri   kazanc=-71.8425 dB
+  [IZ:FR1] t=0s  gnb0 -> A_geri   kazanc=-134.348 dB
+  [IZ:FR1] t=0s  gnb0 -> B_ileri   kazanc=-67.7558 dB
+  [IZ:FR1] t=0s  gnb0 -> B_geri   kazanc=-87.1665 dB
+  [IZ:FR2] t=0.028s  gnb0 -> A_ileri   kazanc=-89.4286 dB
+  [IZ:FR2] t=0.028s  gnb0 -> B_ileri   kazanc=-85.5066 dB
+  [IZ:FR2] t=0.028s  gnb0 -> B_geri   kazanc=-106.65 dB
+  [IZ:FR2] t=0.028s  gnb0 -> C_geri   kazanc=-109.995 dB
+0.300s  [DINAMIK SENSOR ILK] A_ileri  gnb0  FR2 gain=-88.69 dB  -> FR2/BWP1
+0.300s  [DINAMIK SENSOR ILK] A_geri  gnb2  FR2 gain=-114.12 dB  -> FR2/BWP1
+0.300s  [DINAMIK SENSOR ILK] B_ileri  gnb0  FR2 gain=-86.81 dB  -> FR2/BWP1
+0.300s  [DINAMIK SENSOR ILK] B_geri  gnb0  FR2 gain=-106.81 dB  -> FR2/BWP1
+0.300s  [DINAMIK SENSOR ILK] C_ileri  gnb3  FR2 gain=-123.21 dB  -> FR2/BWP1
+0.300s  [DINAMIK SENSOR ILK] C_geri  gnb0  FR2 gain=-110.75 dB  -> FR2/BWP1
+0.86s  [HANDOVER BASLADI] A_geri (IMSI 5)  cellId 3 -> 2  (rnti 1)
+0.86s  [HANDOVER TAMAMLANDI] A_geri (IMSI 5)  yeni cellId 2  (rnti 1)
+[GNB STATIK] CONTROL (GBR_V2X) -> FR1 / BWP0
+[GNB STATIK] MAP (NGBR_VIDEO_TCP_DEFAULT) -> FR2 / BWP1
+1.200s  [DINAMIK SENSOR DEGISIM] A_geri  gnb1  FR2 gain=-128.32 dB  FR2/BWP1 -> FR1/BWP0
+1.400s  [DINAMIK SENSOR DEGISIM] A_geri  gnb1  FR2 gain=-110.11 dB  FR1/BWP0 -> FR2/BWP1
+1.46s  [HANDOVER BASLADI] A_geri (IMSI 5)  cellId 2 -> 3  (rnti 1)
+1.46s  [HANDOVER TAMAMLANDI] A_geri (IMSI 5)  yeni cellId 3  (rnti 2)
+2.66s  [HANDOVER BASLADI] A_ileri (IMSI 4)  cellId 1 -> 2  (rnti 1)
+2.66s  [HANDOVER TAMAMLANDI] A_ileri (IMSI 4)  yeni cellId 2  (rnti 2)
+4.600s  [DINAMIK SENSOR DEGISIM] A_ileri  gnb1  FR2 gain=-128.09 dB  FR2/BWP1 -> FR1/BWP0
+4.800s  [DINAMIK SENSOR DEGISIM] C_ileri  gnb3  FR2 gain=-151.08 dB  FR2/BWP1 -> FR1/BWP0
+6.500s  [DINAMIK SENSOR DEGISIM] A_ileri  gnb1  FR2 gain=-114.18 dB  FR1/BWP0 -> FR2/BWP1
+6.600s  [DINAMIK SENSOR DEGISIM] C_geri  gnb0  FR2 gain=-125.54 dB  FR2/BWP1 -> FR1/BWP0
+7.46s  [HANDOVER BASLADI] A_ileri (IMSI 4)  cellId 2 -> 3  (rnti 2)
+7.46s  [HANDOVER TAMAMLANDI] A_ileri (IMSI 4)  yeni cellId 3  (rnti 3)
+7.66s  [HANDOVER BASLADI] C_geri (IMSI 9)  cellId 1 -> 4  (rnti 4)
+7.66s  [HANDOVER TAMAMLANDI] C_geri (IMSI 9)  yeni cellId 4  (rnti 2)
+7.700s  [DINAMIK SENSOR DEGISIM] C_geri  gnb3  FR2 gain=-114.81 dB  FR1/BWP0 -> FR2/BWP1
+7.900s  [DINAMIK SENSOR DEGISIM] C_geri  gnb3  FR2 gain=-126.26 dB  FR2/BWP1 -> FR1/BWP0
+8.26s  [HANDOVER BASLADI] A_geri (IMSI 5)  cellId 3 -> 2  (rnti 2)
+8.26s  [HANDOVER TAMAMLANDI] A_geri (IMSI 5)  yeni cellId 2  (rnti 3)
+8.400s  [DINAMIK SENSOR DEGISIM] C_ileri  gnb3  FR2 gain=-114.44 dB  FR1/BWP0 -> FR2/BWP1
+8.700s  [DINAMIK SENSOR DEGISIM] C_ileri  gnb3  FR2 gain=-129.27 dB  FR2/BWP1 -> FR1/BWP0
+8.900s  [DINAMIK SENSOR DEGISIM] C_ileri  gnb3  FR2 gain=-114.83 dB  FR1/BWP0 -> FR2/BWP1
+9.200s  [DINAMIK SENSOR DEGISIM] C_ileri  gnb3  FR2 gain=-149.77 dB  FR2/BWP1 -> FR1/BWP0
+9.26s  [HANDOVER BASLADI] A_ileri (IMSI 4)  cellId 3 -> 2  (rnti 3)
+9.26s  [HANDOVER TAMAMLANDI] A_ileri (IMSI 4)  yeni cellId 2  (rnti 4)
+
+================= SONUC =================
+Izden okunan cagri (gNB<->arac) [FR1] : 240352
+Friis yedegi     (arac<->arac) [FR1] : 187382
+Izden okunan cagri (gNB<->arac) [FR2]: 300800
+Friis yedegi     (arac<->arac) [FR2]: 272581
+>>> Her iki iz de basariyla kullanildi.
+
+--- akis sonuclari ---
+Arac       | Trafik   | Yon | Throughput | Gecikme    | Kayip
+-----------------------------------------------------------------
+A_ileri    | SENSOR   | UL  |    0.75 Mbps |   39.10 ms |  49.05 %
+A_geri     | SENSOR   | UL  |    1.43 Mbps |   17.74 ms |   3.06 %
+B_ileri    | SENSOR   | UL  |    0.41 Mbps |   64.74 ms |  72.31 %
+B_geri     | SENSOR   | UL  |    1.39 Mbps |   20.36 ms |   5.65 %
+C_ileri    | SENSOR   | UL  |    0.67 Mbps |  119.78 ms |  54.76 %
+C_geri     | SENSOR   | UL  |    0.22 Mbps |   69.69 ms |  84.97 %
+A_ileri    | CONTROL  | DL  |    0.05 Mbps |   15.34 ms |   4.69 %
+A_ileri    | MAP      | DL  |    0.77 Mbps |   23.93 ms |   5.92 %
+A_geri     | CONTROL  | DL  |    0.05 Mbps |   15.58 ms |   3.47 %
+A_geri     | MAP      | DL  |    0.79 Mbps |   24.22 ms |   4.08 %
+B_ileri    | CONTROL  | DL  |    0.05 Mbps |    2.74 ms |   0.00 %
+B_ileri    | MAP      | DL  |    0.82 Mbps |    2.73 ms |   0.00 %
+B_geri     | CONTROL  | DL  |    0.05 Mbps |    2.43 ms |   0.00 %
+B_geri     | MAP      | DL  |    0.82 Mbps |    2.44 ms |   0.00 %
+C_ileri    | CONTROL  | DL  |    0.05 Mbps |    4.72 ms |   3.88 %
+C_ileri    | MAP      | DL  |    0.79 Mbps |    6.79 ms |   4.39 %
+C_geri     | CONTROL  | DL  |    0.05 Mbps |    2.70 ms |   4.08 %
+C_geri     | MAP      | DL  |    0.79 Mbps |    4.19 ms |   4.39 %
+
+--- dinamik SENSOR + HISTERESIS BWP ozeti ---
+FR2->FR1 esigi: -125.00 dB
+FR1->FR2 esigi: -115.00 dB
+Toplam SENSOR BWP degisimi: 12
+  A_ileri    : 2 degisim  | son=FR2/BWP1
+  A_geri     : 2 degisim  | son=FR2/BWP1
+  B_ileri    : 0 degisim  | son=FR2/BWP1
+  B_geri     : 0 degisim  | son=FR2/BWP1
+  C_ileri    : 5 degisim  | son=FR1/BWP0
+  C_geri     : 3 degisim  | son=FR1/BWP0
+
+--- handover ozeti ---
+Toplam tamamlanan handover: 7
+  A_ileri    : 3
+  A_geri     : 3
+  B_ileri    : 0
+  B_geri     : 0
+  C_ileri    : 0
+  C_geri     : 1
